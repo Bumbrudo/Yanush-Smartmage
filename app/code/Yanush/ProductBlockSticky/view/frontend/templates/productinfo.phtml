@@ -1,0 +1,20 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+use Yanush\ProductBlockSticky\Block\GetProductInfo;
+
+/** @var GetProductInfo $block */
+?>
+<div class="product-info-wrapper">
+    <?php if ($currentProduct = $block->getCurrentProduct()) {
+        echo '<div class="prod_img"><img src="' . $block->getImage() . '"/></div>';
+        echo '<div class="prod_name">'.$currentProduct->getName().'</div>';
+        echo '<div class="prod_price">'.$block->getChildBlock("product.price.final.sticky")->toHtml().'</div>';
+    }
+    ?>
+</div>
+

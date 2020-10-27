@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="mage/gallery/gallery.css"/>
+    </head>
+    <body>
+
+
+        <move element="product.info.options.wrapper.bottom.sticky" destination="main.content" before="-"/>
+
+
+        <block class="Magento\Catalog\Block\Product\View" name="product.info.options.wrapper.bottom.sticky" as="product.info.options.wrapper.bottom.sticky" template="Magento_Catalog::product/view/options/wrapper/bottomsticky.phtml">
+            <block class="Magento\Catalog\Block\Product\View" name="product.info.addtocart.additional.sticky" as="product.info.addtocart.sticky" template="Magento_Catalog::product/view/sticky.phtml"/>
+        </block>
+
+
+    </body>
+</page>
