@@ -1,2 +1,0 @@
-title,identifier,content
-Products,product-list,"<p>{{widget type=""Yanush\ProductWidget\Block\Widget\MaxHeight""}}{{widget type=""Magento\CatalogWidget\Block\Product\ProductsList"" title=""Product List page"" show_pager=""0"" products_count=""10"" template=""Magento_CatalogWidget::product/widget/content/grid.phtml"" conditions_encoded=""^[`1`:^[`type`:`Magento||CatalogWidget||Model||Rule||Condition||Combine`,`aggregator`:`all`,`value`:`1`,`new_child`:``^]^]""}}</p>"
