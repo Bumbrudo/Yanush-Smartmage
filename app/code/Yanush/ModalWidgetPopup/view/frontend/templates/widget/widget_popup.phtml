@@ -1,0 +1,8 @@
+<div id="modal-content-newsletter" data-mage-init='{"widget-modal": {"target": "#modal-content-newsletter"}}'>
+    <?php echo $block->getContent(); ?>
+    <?php
+    echo '<div class="newsletter_wrp">';
+    echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('newsletter_description')->toHtml();
+    echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer_newsletter')->toHtml();
+    echo '</div>'; ?>
+</div>
