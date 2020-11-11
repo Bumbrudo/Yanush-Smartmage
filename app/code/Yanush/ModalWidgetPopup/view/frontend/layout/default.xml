@@ -1,0 +1,7 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:View/Layout:etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="main">
+            <block class="Yanush\ModalWidgetPopup\Block\Widget\WidgetPopup" name="widget.popup" template="Yanush_ModalWidgetPopup::widget/widget_popup.phtml" />
+        </referenceContainer>
+    </body>
+</page>
